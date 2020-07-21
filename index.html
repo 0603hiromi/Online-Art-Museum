@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Art Museum</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Javascript file -->
+    <script src="./jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        mode         : 'fade',
+        captions     : true
+      });
+    });
+    </script>
+
+    <!-- CSS file -->
+    <link href="./jquery.bxslider.css" rel="stylesheet" type="text/css">
+
+    <style media="screen">
+    #bxslider img {
+      width: auto;
+      max-width: 100%;
+      height: 750px;
+      margin: 0 auto;
+      object-fit: contain;
+      display: block;
+    }
+    h1 {
+      font-size: 40px;
+      font-family: cursive;
+      text-align: center;
+    }
+    h2 {
+      font-size: 10px;
+      font-family: inherit;
+      text-align: center;
+    }
+    </style>
+
+  </head>
+  <body oncontextmenu="return false;" oncopy="return false;">
+
+    <header>
+      <h1>Online Art Museum</h1>
+    </header>
+
+    <div class="bxslider" id="bxslider">
+      <li><a href="https://images.metmuseum.org/CRDImages/as/original/DP147978_CRD.jpg" data-lightbox="group" data-title="「作品名」"><img src="https://images.metmuseum.org/CRDImages/as/original/DP147978_CRD.jpg" alt="" title="〇年〇組 〇〇〇〇 「作品名」"></a></li>
+      <li><a href="https://images.metmuseum.org/CRDImages/as/original/DP121500.jpg" data-lightbox="group" data-title="「名前」"><img src="https://images.metmuseum.org/CRDImages/as/original/DP121500.jpg" alt="" title="△年△組 △△△△ 「作品名」"></a></li>
+      <li><a href="https://images.metmuseum.org/CRDImages/as/original/DP138958.jpg" data-lightbox="group" data-title="「Name」"><img src="https://images.metmuseum.org/CRDImages/as/original/DP138958.jpg" alt="" title="☆年☆組 ☆☆☆☆ 「作品名」"></a></li>
+    </div>
+
+    <footer>
+      <h2>🄫TGUISS Art Club</h2>
+    </footer>
+
+  </body>
+</html>
